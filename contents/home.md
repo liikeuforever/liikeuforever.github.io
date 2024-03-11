@@ -1,27 +1,25 @@
 
 #### Biography
-I am currently a junior Undergraduate Student pursuing a bachelor's Degree in computer science at College of Liberal Arts, University of Minnesota Twins Cities.
+I am currently a graduate student at the School of Computer and Artificial Intelligence, Southwest Jiaotong University, majoring in Computer Science and Technology. My research area covers databases, spatio-temporal data, data mining and distributed systems, with a focus on the design and implementation of high availability and high performance data management tools based on spatio-temporal data (e.g., trajectory data). Since October 2022, I have been conducting related research under the guidance of my advisor, Prof. [Yu Zheng](http://urban-computing.com/yuzheng).
 
-My research interests lie in Large Multimodal Models (LMMs) and their application in diverse practical scenarios, such as biological and system large models. My focus also extends to developing efficient machine learning systems aimed at expediting the training and inference processing of LMMs (especially LLMs), leveraging expertise in high-performance computing and distributed systems.
+At the undergraduate level, I also studied in Southwest Jiaotong University, during which I won several university honors, scholarships and competition awards. Through the recommendation for graduate study, I continued my studies at the same university. Since March 2020, under the guidance of Prof. [Huanlai Xing](https://faculty.swjtu.edu.cn/xinghuanlai), I have been focusing on research studies in the areas of temporal classification, reinforcement learning and semantic communication, which is an invaluable experience that has sharpened my research ability and research intuition. I am also a member of the varsity team of Southwest Jiaotong University's Programming Competition, and have participated in and won several ICPC/CCPC competitions.
 
-Before transferring to the University of Minnesota, I studied at Nanchang University, majoring in Artificial Intelligence in a top-tier class with a School Academic Special Scholarship. I was honored to be advised by Professor [Zichen Xu](https://good.ncu.edu.cn/Pages/Professor.html) at [GOOD LAB](https://good.ncu.edu.cn) starting from March 2022, where my focus was on solving data-centric challenges and building efficient and reliable systems. I was the leader of Nanchang University Supercomputer Cluster Team ([NCUSCC](https://hpc.ncuscc.tech/)) Leader, with experience of ASC22 and SC23(IndySCC).
+Between December 2022 and October 2023, as an intern at the [JD ICity](https://icity.jd.com/), I joined the R&D team of [JUST (JD Urban Spatio-Temporal Data Engine)](https://just.jd.com/#/productCenter), working on a more usable and efficient trajectory data management tool, and the final results were successfully presented at the ICDE’2024.
 
-I was also fortunately recruited as a research assistant at **TOP** NLP Lab [TsinghuaNLP](https://github.com/thunlp) in Beijing from July to September 2023, advised by Professor [Zhiyuan Liu](https://nlp.csai.tsinghua.edu.cn/~lzy/), trying to build efficient distributed large language model training framework [BMTrain](https://github.com/OpenBMB/BMTrain) and Develop 10B Chinese LLM [CPM-Bee](https://github.com/OpenBMB/CPM-Bee/blob/main/README_en.md).
-
-I am passionate about open source and firmly believe in its potential to disseminate knowledge widely, leverage technology to lead innovation to the world and contribute to the advancement of human society. I am proud to have garnered over **1000 stars** and acquired **155 followers** on GitHub. It is gratifying to know that my open-source projects have benefitted numerous individuals, and I have personally gained valuable knowledge from the open-source community.
+Subsequently, from January to March 2024, as an intern, I participated in the database kernel work of [CnosDB](https://cn.cnosdb.com/), a domestic temporal database open source project, which was my first time to participate in the development of open source projects, and I deeply experienced the charm of open source projects. [[PR]](https://github.com/cnosdb/cnosdb/pulls?q=is%3Apr+author%3Aliikeuforever+is%3Aclosed+)
 
 #### Contact
-* Github: [JerryYin777](https://github.com/JerryYin777)
-* Email: yin00486 [at] umn.edu
-* Google Scholar：[Congrui Yin's Google Scholar](https://scholar.google.com/citations?hl=en&user=7gsdLw4AAAAJ)
+* Github: [liikeuforever](https://github.com/liikeuforever)
+* Email: xuzihang829 [at] outlook.com
+* Wechat：sago1437
 
 #### Education
-2023.12 - Present, Computer Science, College of Liberal Arts, University of Minnesota Twin Cities.
+2023.09 - Present, Computer Science and Technology, School of Computing and Artificial Intelligence, Southwest Jiaotong University.
 
-2021.09 - 2023.12, Artificial Intelligence, School of Information Engineering, Nanchang University.
+2019.09 - 2023.06, Computer Science and Technology, School of Computing and Artificial Intelligence, Southwest Jiaotong University.
 
 #### Research Interests
-Natural Language Processing, Machine Learning System, Human Computer Interaction.
+Databases, Spatio-Temporal Data Mining, Distributed Systems.
 
 #### Skills
 * **Natural Language Processing:** Proficient in using the PyTorch framework, with the ability to reproduce mainstream large-scale models in the industry (such as Baichuan, llama2, Qwen). Proficient in using quantization and inference tools such as QLoRA, vLLM, and skilled in distributed parallel training (using training tools such as BMTrain, DeepSpeed).
