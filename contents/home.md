@@ -20,12 +20,3 @@ Subsequently, from January to March 2024, as an intern, I engaged in the databas
 
 #### Research Interests
 Databases, Spatio-Temporal Data Mining, Distributed Systems.
-
-#### Skills
-* **Natural Language Processing:** Proficient in using the PyTorch framework, with the ability to reproduce mainstream large-scale models in the industry (such as Baichuan, llama2, Qwen). Proficient in using quantization and inference tools such as QLoRA, vLLM, and skilled in distributed parallel training (using training tools such as BMTrain, DeepSpeed).
-
-* **High Performance Computing:** Proficient in CUDA Programming, familiar with C++, knowledgeable in compiler optimization principles, and understanding of MPI, OpenMP, and SIMD acceleration optimization technologies.
-
-* **Computer System Architecture:** Familiar with GPU architecture and RISC-V instruction set, and has participated in the [One Life, One Core](https://ysyx.oscc.cc/) project.
-
-* **Other:** Understanding of serverless computing architecture, experience in applying federated learning in network security, involvement in both front-end and back-end development, familiarity with Linux operating system and operation and maintenance ( maintained a large server cluster with 21 nodes in the GOOD LAB). Additionally, has researched computer vision and reinforcement learning in the field of artificial intelligence.
