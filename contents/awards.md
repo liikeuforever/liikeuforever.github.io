@@ -1,8 +1,12 @@
 
-- **Dean's List (All Semester)** at University of Minnesota Twin Cities.
+- ICPC Sichuan Provincial Collegiate Programming Contest, **Gold Prize**, 2022.
 
-- Special Corporate Scholarships, 2023. **(1/30)**
+- ICPC International Collegiate Programming Contest (Hangzhou Site), **Bronze Prize**, 2022.
 
-- School Special Academic Scholarship, 2023.**(1%)**
+- CCPC China Collegiate Programming Contest (Mianyang Site), **Bronze Prize**, 2022.
 
-- First-Class Academic Scholarship, 2022.**(8%)**
+- China Undergraduate Mathematical Contest in Modeling, **Second Prize**, 2021.
+
+- Chinese College Students Service Outsourcing Innovation And Entrepreneurship Competition, **Second Prize**, 2022.
+
+- School Top 100 Outstanding Graduation Designs, **(1%)**, 2022.
