@@ -7,7 +7,7 @@
 
 #### News
 
-<strong style="color:red;"><strong>I’m Valorant Myth 1 now!</strong>
+<strong style="color:red;"><strong>I’m Valorant Myth 1 now!</strong></strong>
 
 #### Biography
 I am currently a graduate student at the School of Computer Science and Artificial Intelligence, Southwest Jiaotong University, specializing in Computer Science and Technology. My research interests encompass databases, spatio-temporal data, data mining, and distributed systems, with a primary focus on the design and implementation of high-availability and high-performance data management tools based on spatio-temporal data, such as trajectory data. Since October 2022, I have been conducting relevant research under the guidance of Professor [Yu Zheng](http://urban-computing.com/yuzheng).
@@ -29,4 +29,4 @@ Subsequently, from January to March 2024, as an intern, I engaged in the databas
 2019.09 - 2023.06, Computer Science and Technology, School of Computing and Artificial Intelligence, Southwest Jiaotong University.
 
 #### Research Interests
-Databases, Spatio-Temporal Data Mining, Distributed Systems.sd
+Databases, Spatio-Temporal Data Mining, Distributed Systems.
