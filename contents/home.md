@@ -29,4 +29,4 @@ Subsequently, from January to March 2024, as an intern, I engaged in the databas
 2019.09 - 2023.06, Computer Science and Technology, School of Computing and Artificial Intelligence, Southwest Jiaotong University.
 
 #### Research Interests
-Databases, Spatio-Temporal Data Mining, Distributed Systems.
+Databases, Spatio-Temporal Data Mining, Distributed Systems.sd
