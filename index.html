@@ -1,174 +1,467 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-CN">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title id="title"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denji Xu</title>
     <link rel="icon" type="image/x-icon" href="static/assets/Congrui.ico" />
-    <!-- Bootstrap icons-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,600;1,600&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&amp;display=swap"
-        rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;1,400&amp;display=swap"
-        rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
-    <link type="text/css" href="static/css/styles.css" rel="stylesheet" />
-    <link type="text/css" href="static/css/main.css" rel="stylesheet" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* 主标题 */
+        .main-title {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 40px;
+            letter-spacing: -0.02em;
+        }
+
+        /* 导航菜单 */
+        .nav-menu {
+            margin-bottom: 60px;
+        }
+
+        .nav-menu a {
+            color: rgb(0, 82, 217);
+            text-decoration: underline;
+            font-size: 1.5rem;
+            font-weight: 500;
+            margin-right: 30px;
+            transition: opacity 0.2s ease;
+        }
+
+        .nav-menu a:hover {
+            opacity: 0.7;
+        }
+
+        .nav-menu a.active {
+            color: rgb(0, 82, 217);
+            text-decoration: underline;
+        }
+
+        /* 问候语 */
+        .greeting {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 40px;
+            letter-spacing: -0.02em;
+        }
+
+        /* 简介 */
+        .intro {
+            font-size: 1.25rem;
+            color: #666;
+            margin-bottom: 50px;
+            line-height: 1.7;
+        }
+
+        .intro a {
+            color: rgb(0, 82, 217);
+            text-decoration: underline;
+        }
+
+        .intro a:hover {
+            opacity: 0.7;
+        }
+
+        /* 列表样式 */
+        .content-list {
+            list-style: none;
+            margin-bottom: 40px;
+        }
+
+        .content-list li {
+            margin-bottom: 12px;
+            font-size: 1.25rem;
+        }
+
+        .content-list a {
+            color: rgb(0, 82, 217);
+            text-decoration: underline;
+            font-weight: 500;
+        }
+
+        .content-list a:hover {
+            opacity: 0.7;
+        }
+
+        /* 内容区域 */
+        .content-section {
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 30px;
+            letter-spacing: -0.02em;
+        }
+
+        .section-content {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .section-content p {
+            margin-bottom: 20px;
+        }
+
+        .section-content a {
+            color: rgb(0, 82, 217);
+            text-decoration: underline;
+        }
+
+        .section-content a:hover {
+            opacity: 0.7;
+        }
+
+        /* 联系方式 */
+        .contact-info {
+            margin-bottom: 30px;
+        }
+
+        .contact-info p {
+            margin-bottom: 8px;
+            font-size: 1.1rem;
+        }
+
+        /* 教育背景 */
+        .education-item {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+
+        /* 奖项列表 */
+        .awards-list {
+            list-style: none;
+        }
+
+        .awards-list li {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        .award-name {
+            font-weight: 600;
+            color: #000;
+        }
+
+        .award-level {
+            color: rgb(0, 82, 217);
+            font-weight: 600;
+        }
+
+        .award-year {
+            color: #666;
+        }
+
+        /* 页脚 */
+        .footer {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #eee;
+            font-size: 0.9rem;
+            color: #999;
+            text-align: center;
+        }
+
+        .footer a {
+            color: rgb(0, 82, 217);
+            text-decoration: none;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 15px;
+            }
+
+            .main-title, .greeting {
+                font-size: 2.5rem;
+            }
+
+            .nav-menu a {
+                font-size: 1.3rem;
+                margin-right: 20px;
+                display: inline-block;
+                margin-bottom: 10px;
+            }
+
+            .intro {
+                font-size: 1.1rem;
+            }
+
+            .content-list li {
+                font-size: 1.1rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* 隐藏其他页面内容 */
+        .page-content {
+            display: none;
+        }
+
+        .page-content.active {
+            display: block;
+        }
+    </style>
 </head>
+<body>
+    <!-- 主标题 -->
+    <h1 class="main-title">Denji Xu</h1>
 
-<body id="page-top">
-    <!-- Navigation-->
-    <nav class="header navbar navbar-expand-lg navbar-light fixed-top shadow-sm" id="mainNav">
-        <div class="container px-5">
-            <a id="page-top-title" class="navbar-brand fw-bold" href="#page-top"></a>
-            <!-- <a href="#page-top"><img src="static/assets/img/CUMT_LOGO.svg" style="width: 11rem;"></a> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                MENU
-                <i class="bi-list"></i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#page-top">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#publications">PUBLICATIONS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#project">SIDE PROJECTS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#awards">AWARDS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-lg-3" href="#notes">NOTES</a>
-                    </li>
+    <!-- 导航菜单 -->
+    <nav class="nav-menu">
+        <a href="#" class="nav-link active" data-page="home">首页</a>
+        <a href="#" class="nav-link" data-page="blog">博客</a>
+        <a href="#" class="nav-link" data-page="about">关于</a>
+        <a href="#" class="nav-link" data-page="cv">简历</a>
+        <a href="#" class="nav-link" data-page="awards">荣誉</a>
+    </nav>
 
+    <!-- 首页内容 -->
+    <div id="home" class="page-content active">
+        <h2 class="greeting">你好，我是 Denji！</h2>
+        
+        <div class="intro">
+            数据库研究者 @ <a href="https://www.swjtu.edu.cn/" target="_blank">西南交通大学</a>。曾在 <a href="https://icity.jd.com/" target="_blank">京东城市</a> 和 <a href="https://cn.cnosdb.com/" target="_blank">CnosDB</a> 实习。
+        </div>
+
+        <ul class="content-list">
+        <ul class="content-list">
+            <li>• <a href="#" class="nav-link" data-page="blog">博客文章</a></li>
+            <li>• <a href="#" class="nav-link" data-page="about">关于我</a></li>
+            <li>• <a href="#" class="nav-link" data-page="cv">个人简历</a></li>
+            <li>• <a href="#" class="nav-link" data-page="awards">获奖经历</a></li>
+        </ul>
+    </div>
+
+    <!-- 关于页面 -->
+    <!-- 博客页面 -->
+    <div id="blog" class="page-content">
+        <h2 class="section-title">博客文章</h2>
+        
+        <div class="section-content">
+            <p>这里是我的技术博客和学习笔记，记录研究过程中的思考和发现。</p>
+            
+            <div class="content-section">
+                <h3 class="section-title">数据库相关</h3>
+                <ul class="content-list">
+                    <li>• <a href="https://example.com/blog/database-optimization" target="_blank">时序数据库性能优化实践</a></li>
+                    <li>• <a href="https://example.com/blog/distributed-systems" target="_blank">分布式系统设计思考</a></li>
+                    <li>• <a href="https://example.com/blog/cnosdb-contribution" target="_blank">CnosDB开源贡献经验分享</a></li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3 class="section-title">时空数据挖掘</h3>
+                <ul class="content-list">
+                    <li>• <a href="https://example.com/blog/trajectory-analysis" target="_blank">轨迹数据分析方法综述</a></li>
+                    <li>• <a href="https://example.com/blog/spatial-temporal" target="_blank">时空数据管理系统设计</a></li>
+                    <li>• <a href="https://example.com/blog/just-engine" target="_blank">JUST引擎架构解析</a></li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3 class="section-title">算法竞赛</h3>
+                <ul class="content-list">
+                    <li>• <a href="https://example.com/blog/icpc-experience" target="_blank">ICPC竞赛经验总结</a></li>
+                    <li>• <a href="https://example.com/blog/algorithm-practice" target="_blank">算法训练心得体会</a></li>
+                    <li>• <a href="https://example.com/blog/problem-solving" target="_blank">问题解决思维方法</a></li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3 class="section-title">学术研究</h3>
+                <ul class="content-list">
+                    <li>• <a href="https://example.com/blog/research-methodology" target="_blank">科研方法论思考</a></li>
+                    <li>• <a href="https://example.com/blog/paper-writing" target="_blank">学术论文写作技巧</a></li>
+                    <li>• <a href="https://example.com/blog/conference-experience" target="_blank">国际会议参会感悟</a></li>
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
 
-    <!-- Top Section -->
-    <section class="top-section" style="background-image: url('static/assets/img/view.png');">
-        <div class="top-section-content">
-            <div class="container px-1">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <h2 id="top-section-bg-text" class="text-light display-3 lh-1 mb-4 font-alt"></h2>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="user-photo photo"><img class="shadow"
-                                src="static/assets/img/xzh.jpg"></div>
-                    </div>
+    <!-- 简历页面 -->
+    <div id="cv" class="page-content">
+        <h2 class="section-title">个人简历</h2>
+        
+        <div class="section-content">
+            <p>点击下方链接查看或下载我的详细简历：</p>
+            
+            <div class="content-section">
+                <ul class="content-list">
+                    <li>• <a href="static/assets/cv/Denji_Xu_CV_CN.pdf" target="_blank">中文简历 (PDF)</a></li>
+                    <li>• <a href="static/assets/cv/Denji_Xu_CV_EN.pdf" target="_blank">English Resume (PDF)</a></li>
+                    <li>• <a href="static/assets/cv/Denji_Xu_Academic_CV.pdf" target="_blank">学术简历 (PDF)</a></li>
+                </ul>
+            </div>
+
+            <div class="content-section">
+                <h3 class="section-title">简历亮点</h3>
+                <div class="section-content">
+                    <p><strong>教育背景：</strong> 西南交通大学计算机科学与技术专业，本硕连读</p>
+                    <p><strong>研究方向：</strong> 数据库、时空数据挖掘、分布式系统</p>
+                    <p><strong>实习经历：</strong> 京东城市智能研究院、CnosDB开源项目</p>
+                    <p><strong>学术成果：</strong> ICDE 2024会议论文发表</p>
+                    <p><strong>竞赛获奖：</strong> ICPC金奖、多项国家级竞赛奖项</p>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Top Section -->
+    </div>
 
+    <!-- 关于页面 -->
+    <div id="about" class="page-content">
+        <h2 class="section-title">关于我</h2>
+        
+        <div class="section-content">
+            <p>我目前是西南交通大学计算机与人工智能学院计算机科学与技术专业的研究生。我的研究兴趣涵盖数据库、时空数据、数据挖掘和分布式系统，主要专注于基于时空数据（如轨迹数据）的高可用、高性能数据管理工具的设计与实现。自2022年10月起，我在 <a href="http://urban-computing.com/yuzheng" target="_blank">郑宇教授</a> 的指导下进行相关研究。</p>
 
-    <!-- Home -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="home">
-        <div class="container px-5">
-            <header>
-                <h2 id="home-subtitle"> </h2>
-                <!-- <span class="bi bi-list"></span> -->
-            </header>
-            <div class="main-body" id="home-md"></div>
+            <p>在西南交通大学本科期间，我获得了各种校级荣誉、奖学金和竞赛奖项。通过推免继续在同一所大学深造。从2020年3月开始，在 <a href="https://faculty.swjtu.edu.cn/xinghuanlai" target="_blank">邢焕来教授</a> 的指导下，我深入研究时序分类、强化学习和语义通信领域，这段宝贵的经历锻炼了我的研究能力和科学直觉。</p>
 
+            <p>2022年12月至2023年10月，作为 <a href="https://icity.jd.com/" target="_blank">京东城市智能研究院</a> 的实习生，我加入了 <a href="https://just.jd.com/#/productCenter" target="_blank">JUST（京东城市时空数据引擎）</a> 的研发团队，致力于开发更可靠、高效的轨迹数据管理工具，最终成果成功发表于ICDE 2024会议。</p>
 
+            <p>随后，2024年1月至3月，作为实习生参与了国产时序数据库开源项目 <a href="https://cn.cnosdb.com/" target="_blank">CnosDB</a> 的数据库内核工作。这是我第一次参与开源项目开发，让我深刻体会到了开源项目的魅力。</p>
         </div>
-    </section>
-    <!-- Home -->
 
-    <!-- Publications -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="publications">
-        <div class="container px-5">
-            <header>
-                <h2 id="publications-subtitle"><i class="bi bi-file-text-fill"></i>&nbsp;PUBLICATIONS</h2>
-            </header>
-            <div class="main-body" id="publications-md"></div>
-
-        </div>
-    </section>
-    <!-- Publications  -->
-
-    <!-- Side Project -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="project">
-        <div class="container px-5">
-            <header>
-                <!-- <h2 id="achievements-subtitle"><i class="bi bi-trophy-fill"></i>&nbsp;ACHIEVEMENTS</h2> -->
-                <h2 id="achievements-subtitle"><i class="bi bi-code-slash"></i>&nbsp; SIDE PROJECTS</h2>
-            </header>
-            <div class="main-body" id="project-md">
+        <div class="content-section">
+            <h3 class="section-title">联系方式</h3>
+            <div class="contact-info">
+                <p><strong>GitHub:</strong> <a href="https://github.com/liikeuforever" target="_blank">liikeuforever</a></p>
+                <p><strong>邮箱:</strong> xuzihang829@outlook.com</p>
+                <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com.hk/citations?user=75NZ9ngAAAAJ&hl=zh-CN&oi=ao" target="_blank">学术主页</a></p>
+                <p><strong>知乎:</strong> <a href="https://www.zhihu.com/people/mu-xin-xin-69-83" target="_blank">个人主页</a></p>
             </div>
         </div>
-    </section>
-    <!-- Side Project -->
 
-    <!-- Awards -->
-    <section class="bg-gradient-primary-to-secondary-gray mt5 md5" id="awards">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-award-fill"></i>&nbsp;AWARDS </h2>
-            </header>
-            <div class="main-body" id="awards-md"></div>
-
-        </div>
-    </section>
-    <!-- Awards -->
-
-    <!-- Service -->
-    <section class="bg-gradient-primary-to-secondary-light mt5 md5" id="notes">
-        <div class="container px-5">
-            <header>
-                <h2 id="awards-subtitle"><i class="bi bi-chat-left-text"></i>&nbsp;NOTES </h2>
-            </header>
-            <div class="main-body" id="notes-md"></div>
-        </div>
-    </section>
-    <!-- Service -->
-
-
-
-    <!-- Footer-->
-    <footer class="bg-bottom text-center py-5">
-        <div class="container px-5">
-            <div class="text-white-50 small">
-                <div id="copyright-text" class="mb-2"></div>
-                <a id="github-link" href="https://github.com/JerryYin777">Github</a>
-                <span class="mx-1">&middot;</span>
-                <a id="license-link" href="https://github.com/JerryYin777/JerryYin777.github.io/blob/master/LICENSE">License</a>
+        <div class="content-section">
+            <h3 class="section-title">教育背景</h3>
+            <div class="education-item">
+                <strong>2023.09 - 至今</strong><br>
+                计算机科学与技术，计算机与人工智能学院，西南交通大学（研究生）
+            </div>
+            <div class="education-item">
+                <strong>2019.09 - 2023.06</strong><br>
+                计算机科学与技术，计算机与人工智能学院，西南交通大学（本科）
             </div>
         </div>
+
+        <div class="content-section">
+            <h3 class="section-title">研究兴趣</h3>
+            <div class="section-content">
+                <p>数据库、时空数据挖掘、分布式系统</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 研究页面 -->
+    <div id="research" class="page-content">
+        <h2 class="section-title">研究成果</h2>
+        
+        <div class="section-content">
+            <div class="content-section">
+                <h3 class="section-title">时空数据管理</h3>
+                <p>专注于轨迹数据的高可用、高性能管理工具设计与实现。在京东城市智能研究院实习期间，参与JUST时空数据引擎的研发工作，相关成果发表于ICDE 2024国际会议。</p>
+            </div>
+
+            <div class="content-section">
+                <h3 class="section-title">开源贡献</h3>
+                <p>参与国产时序数据库 <a href="https://cn.cnosdb.com/" target="_blank">CnosDB</a> 的内核开发，贡献多个重要功能模块。通过开源项目的参与，深入了解了数据库系统的底层实现原理。</p>
+                <p><strong>相关链接:</strong> <a href="https://github.com/cnosdb/cnosdb/pulls?q=is%3Apr+author%3Aliikeuforever+is%3Aclosed+" target="_blank">我的PR记录</a></p>
+            </div>
+
+            <div class="content-section">
+                <h3 class="section-title">机器学习研究</h3>
+                <p>在本科期间深入研究时序分类、强化学习和语义通信领域，积累了丰富的科研经验和扎实的理论基础。</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 荣誉页面 -->
+    <div id="awards" class="page-content">
+        <h2 class="section-title">荣誉奖项</h2>
+        
+        <ul class="awards-list">
+            <li>
+                <span class="award-name">ICPC四川省大学生程序设计竞赛</span><br>
+                <span class="award-level">金奖</span> • <span class="award-year">2022年</span>
+            </li>
+            <li>
+                <span class="award-name">ICPC国际大学生程序设计竞赛（杭州站）</span><br>
+                <span class="award-level">铜奖</span> • <span class="award-year">2022年</span>
+            </li>
+            <li>
+                <span class="award-name">CCPC中国大学生程序设计竞赛（绵阳站）</span><br>
+                <span class="award-level">铜奖</span> • <span class="award-year">2022年</span>
+            </li>
+            <li>
+                <span class="award-name">全国大学生数学建模竞赛</span><br>
+                <span class="award-level">二等奖</span> • <span class="award-year">2021年</span>
+            </li>
+            <li>
+                <span class="award-name">中国大学生服务外包创新创业大赛</span><br>
+                <span class="award-level">二等奖</span> • <span class="award-year">2022年</span>
+            </li>
+            <li>
+                <span class="award-name">校级优秀毕业设计</span><br>
+                <span class="award-level">前1%</span> • <span class="award-year">2022年</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <p>&copy; Denji Xu 2024. All Rights Reserved.</p>
     </footer>
 
-    <!-- Bootstrap core JS-->
-    <script type="text/javascript" src="static/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript" src="static/js/marked.min.js"></script>
     <script>
-        MathJax = {
-            tex: { inlineMath: [['$', '$']] }
-        };
+        // 简单的页面切换功能
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageContents = document.querySelectorAll('.page-content');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetPage = this.getAttribute('data-page');
+                    
+                    // 移除所有活动状态
+                    navLinks.forEach(nav => nav.classList.remove('active'));
+                    pageContents.forEach(page => page.classList.remove('active'));
+                    
+                    // 添加活动状态
+                    this.classList.add('active');
+                    document.getElementById(targetPage).classList.add('active');
+                    
+                    // 滚动到顶部
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            });
+        });
     </script>
-    <script type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
-
-    <!-- Core JS-->
-    <script type="text/javascript" src="static/js/scripts.js"></script>
-    <script type="text/javascript" src="static/js/js-yaml.min.js"></script>
-
-
 </body>
-
 </html>
