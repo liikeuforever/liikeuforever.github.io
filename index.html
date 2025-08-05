@@ -13,92 +13,118 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-            max-width: 800px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background-color: #fdfdfd;
+            max-width: 900px;
             margin: 0 auto;
-            padding: 40px 20px;
+            padding: 60px 40px;
+            font-size: 16px;
+            letter-spacing: 0.3px;
         }
 
         /* 主标题 */
         .main-title {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #000;
-            margin-bottom: 40px;
-            letter-spacing: -0.02em;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 50px;
+            letter-spacing: -0.03em;
+            line-height: 1.1;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         /* 导航菜单 */
         .nav-menu {
-            margin-bottom: 60px;
+            margin-bottom: 70px;
+            border-bottom: 1px solid #f0f0f0;
+            padding-bottom: 20px;
         }
 
         .nav-menu a {
             color: rgb(0, 82, 217);
             text-decoration: underline;
-            font-size: 1.5rem;
-            font-weight: 500;
-            margin-right: 30px;
-            transition: opacity 0.2s ease;
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin-right: 35px;
+            transition: all 0.3s ease;
+            position: relative;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
         }
 
         .nav-menu a:hover {
-            opacity: 0.7;
+            opacity: 0.8;
+            transform: translateY(-1px);
         }
 
         .nav-menu a.active {
             color: rgb(0, 82, 217);
             text-decoration: underline;
+            text-decoration-thickness: 3px;
         }
 
         /* 问候语 */
         .greeting {
-            font-size: 3rem;
-            font-weight: 700;
-            color: #000;
-            margin-bottom: 40px;
-            letter-spacing: -0.02em;
+            font-size: 3.2rem;
+            font-weight: 800;
+            color: #1a1a1a;
+            margin-bottom: 50px;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         /* 简介 */
         .intro {
-            font-size: 1.25rem;
-            color: #666;
-            margin-bottom: 50px;
-            line-height: 1.7;
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 60px;
+            line-height: 1.8;
+            font-weight: 400;
+            letter-spacing: 0.2px;
         }
 
         .intro a {
             color: rgb(0, 82, 217);
             text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: all 0.3s ease;
         }
 
         .intro a:hover {
-            opacity: 0.7;
+            opacity: 0.8;
+            text-decoration-thickness: 3px;
         }
 
         /* 列表样式 */
         .content-list {
             list-style: none;
-            margin-bottom: 40px;
+            margin-bottom: 50px;
         }
 
         .content-list li {
-            margin-bottom: 12px;
-            font-size: 1.25rem;
+            margin-bottom: 16px;
+            font-size: 1.3rem;
+            line-height: 1.6;
         }
 
         .content-list a {
             color: rgb(0, 82, 217);
             text-decoration: underline;
-            font-weight: 500;
+            font-weight: 600;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            transition: all 0.3s ease;
         }
 
         .content-list a:hover {
-            opacity: 0.7;
+            opacity: 0.8;
+            text-decoration-thickness: 3px;
+            transform: translateX(3px);
         }
 
         /* 内容区域 */
@@ -107,46 +133,59 @@
         }
 
         .section-title {
-            font-size: 2rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            color: #000;
+            color: #1a1a1a;
             margin-bottom: 30px;
             letter-spacing: -0.02em;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
         .section-content {
-            font-size: 1.1rem;
-            line-height: 1.7;
+            font-size: 1.15rem;
+            line-height: 1.8;
             color: #555;
+            letter-spacing: 0.2px;
         }
 
         .section-content p {
-            margin-bottom: 20px;
+            margin-bottom: 24px;
         }
 
         .section-content a {
             color: rgb(0, 82, 217);
             text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: all 0.3s ease;
         }
 
         .section-content a:hover {
-            opacity: 0.7;
+            opacity: 0.8;
+            text-decoration-thickness: 3px;
         }
 
         /* 联系方式 */
         .contact-info {
-            margin-bottom: 30px;
+            margin-bottom: 40px;
         }
 
         .contact-info p {
-            margin-bottom: 8px;
-            font-size: 1.1rem;
+            margin-bottom: 12px;
+            font-size: 1.15rem;
+            line-height: 1.6;
         }
 
         /* 教育背景 */
         .education-item {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-size: 1.15rem;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid rgb(0, 82, 217);
+            border-radius: 4px;
         }
 
         /* 奖项列表 */
@@ -155,33 +194,48 @@
         }
 
         .awards-list li {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-            line-height: 1.6;
+            margin-bottom: 24px;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid rgb(0, 82, 217);
+            transition: all 0.3s ease;
+        }
+
+        .awards-list li:hover {
+            background-color: #f0f4f8;
+            transform: translateX(5px);
         }
 
         .award-name {
-            font-weight: 600;
-            color: #000;
+            font-weight: 700;
+            color: #1a1a1a;
+            display: block;
+            margin-bottom: 8px;
         }
 
         .award-level {
             color: rgb(0, 82, 217);
             font-weight: 600;
+            font-size: 1.1rem;
         }
 
         .award-year {
             color: #666;
+            font-weight: 500;
         }
 
         /* 页脚 */
         .footer {
-            margin-top: 80px;
+            margin-top: 100px;
             padding-top: 40px;
-            border-top: 1px solid #eee;
-            font-size: 0.9rem;
-            color: #999;
+            border-top: 2px solid #f0f0f0;
+            font-size: 1rem;
+            color: #888;
             text-align: center;
+            letter-spacing: 0.3px;
         }
 
         .footer a {
@@ -192,30 +246,39 @@
         /* 响应式设计 */
         @media (max-width: 768px) {
             body {
-                padding: 20px 15px;
+                padding: 30px 20px;
+                font-size: 15px;
             }
 
-            .main-title, .greeting {
+            .main-title {
+                font-size: 2.8rem;
+            }
+
+            .greeting {
                 font-size: 2.5rem;
             }
 
             .nav-menu a {
-                font-size: 1.3rem;
-                margin-right: 20px;
+                font-size: 1.4rem;
+                margin-right: 25px;
                 display: inline-block;
-                margin-bottom: 10px;
+                margin-bottom: 12px;
             }
 
             .intro {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .content-list li {
-                font-size: 1.1rem;
+                font-size: 1.2rem;
             }
 
             .section-title {
-                font-size: 1.8rem;
+                font-size: 1.9rem;
+            }
+
+            .section-content {
+                font-size: 1.1rem;
             }
         }
 
@@ -226,6 +289,28 @@
 
         .page-content.active {
             display: block;
+        }
+
+        /* 博客和简历特殊样式 */
+        .blog-category {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            border-left: 4px solid rgb(0, 82, 217);
+        }
+
+        .cv-highlight {
+            background-color: #f0f4f8;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+            border: 1px solid #e1e8ed;
+        }
+
+        .cv-highlight h3 {
+            color: rgb(0, 82, 217);
+            margin-bottom: 20px;
         }
     </style>
 </head>
@@ -251,7 +336,6 @@
         </div>
 
         <ul class="content-list">
-        <ul class="content-list">
             <li>• <a href="#" class="nav-link" data-page="blog">博客文章</a></li>
             <li>• <a href="#" class="nav-link" data-page="about">关于我</a></li>
             <li>• <a href="#" class="nav-link" data-page="cv">个人简历</a></li>
@@ -259,7 +343,6 @@
         </ul>
     </div>
 
-    <!-- 关于页面 -->
     <!-- 博客页面 -->
     <div id="blog" class="page-content">
         <h2 class="section-title">博客文章</h2>
@@ -267,7 +350,7 @@
         <div class="section-content">
             <p>这里是我的技术博客和学习笔记，记录研究过程中的思考和发现。</p>
             
-            <div class="content-section">
+            <div class="blog-category">
                 <h3 class="section-title">数据库相关</h3>
                 <ul class="content-list">
                     <li>• <a href="https://example.com/blog/database-optimization" target="_blank">时序数据库性能优化实践</a></li>
@@ -276,7 +359,7 @@
                 </ul>
             </div>
 
-            <div class="content-section">
+            <div class="blog-category">
                 <h3 class="section-title">时空数据挖掘</h3>
                 <ul class="content-list">
                     <li>• <a href="https://example.com/blog/trajectory-analysis" target="_blank">轨迹数据分析方法综述</a></li>
@@ -285,7 +368,7 @@
                 </ul>
             </div>
 
-            <div class="content-section">
+            <div class="blog-category">
                 <h3 class="section-title">算法竞赛</h3>
                 <ul class="content-list">
                     <li>• <a href="https://example.com/blog/icpc-experience" target="_blank">ICPC竞赛经验总结</a></li>
@@ -294,7 +377,7 @@
                 </ul>
             </div>
 
-            <div class="content-section">
+            <div class="blog-category">
                 <h3 class="section-title">学术研究</h3>
                 <ul class="content-list">
                     <li>• <a href="https://example.com/blog/research-methodology" target="_blank">科研方法论思考</a></li>
@@ -320,7 +403,7 @@
                 </ul>
             </div>
 
-            <div class="content-section">
+            <div class="cv-highlight">
                 <h3 class="section-title">简历亮点</h3>
                 <div class="section-content">
                     <p><strong>教育背景：</strong> 西南交通大学计算机科学与技术专业，本硕连读</p>
@@ -377,56 +460,33 @@
         </div>
     </div>
 
-    <!-- 研究页面 -->
-    <div id="research" class="page-content">
-        <h2 class="section-title">研究成果</h2>
-        
-        <div class="section-content">
-            <div class="content-section">
-                <h3 class="section-title">时空数据管理</h3>
-                <p>专注于轨迹数据的高可用、高性能管理工具设计与实现。在京东城市智能研究院实习期间，参与JUST时空数据引擎的研发工作，相关成果发表于ICDE 2024国际会议。</p>
-            </div>
-
-            <div class="content-section">
-                <h3 class="section-title">开源贡献</h3>
-                <p>参与国产时序数据库 <a href="https://cn.cnosdb.com/" target="_blank">CnosDB</a> 的内核开发，贡献多个重要功能模块。通过开源项目的参与，深入了解了数据库系统的底层实现原理。</p>
-                <p><strong>相关链接:</strong> <a href="https://github.com/cnosdb/cnosdb/pulls?q=is%3Apr+author%3Aliikeuforever+is%3Aclosed+" target="_blank">我的PR记录</a></p>
-            </div>
-
-            <div class="content-section">
-                <h3 class="section-title">机器学习研究</h3>
-                <p>在本科期间深入研究时序分类、强化学习和语义通信领域，积累了丰富的科研经验和扎实的理论基础。</p>
-            </div>
-        </div>
-    </div>
-
     <!-- 荣誉页面 -->
     <div id="awards" class="page-content">
         <h2 class="section-title">荣誉奖项</h2>
         
         <ul class="awards-list">
             <li>
-                <span class="award-name">ICPC四川省大学生程序设计竞赛</span><br>
+                <span class="award-name">ICPC四川省大学生程序设计竞赛</span>
                 <span class="award-level">金奖</span> • <span class="award-year">2022年</span>
             </li>
             <li>
-                <span class="award-name">ICPC国际大学生程序设计竞赛（杭州站）</span><br>
+                <span class="award-name">ICPC国际大学生程序设计竞赛（杭州站）</span>
                 <span class="award-level">铜奖</span> • <span class="award-year">2022年</span>
             </li>
             <li>
-                <span class="award-name">CCPC中国大学生程序设计竞赛（绵阳站）</span><br>
+                <span class="award-name">CCPC中国大学生程序设计竞赛（绵阳站）</span>
                 <span class="award-level">铜奖</span> • <span class="award-year">2022年</span>
             </li>
             <li>
-                <span class="award-name">全国大学生数学建模竞赛</span><br>
+                <span class="award-name">全国大学生数学建模竞赛</span>
                 <span class="award-level">二等奖</span> • <span class="award-year">2021年</span>
             </li>
             <li>
-                <span class="award-name">中国大学生服务外包创新创业大赛</span><br>
+                <span class="award-name">中国大学生服务外包创新创业大赛</span>
                 <span class="award-level">二等奖</span> • <span class="award-year">2022年</span>
             </li>
             <li>
-                <span class="award-name">校级优秀毕业设计</span><br>
+                <span class="award-name">校级优秀毕业设计</span>
                 <span class="award-level">前1%</span> • <span class="award-year">2022年</span>
             </li>
         </ul>
